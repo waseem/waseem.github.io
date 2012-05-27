@@ -1,0 +1,14 @@
+---
+layout: post
+title: Test Post
+---
+
+h1. {{ page.title }}
+
+{% highlight ruby %}
+class Foo
+  def bar
+    'bar'
+  end
+end
+{% endhighlight %}
