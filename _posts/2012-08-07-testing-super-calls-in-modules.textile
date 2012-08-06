@@ -1,0 +1,82 @@
+---
+layout: post
+title: Testing Super Calls in Modules
+---
+
+h1. {{ page.title }}
+
+The DRY principle says that we should take up common functionality between related classes and move them to a common module. While doing so, every once in a while you will come across writing a method in the module that calls <code>super</code>. Let me show you an example.
+
+{% highlight ruby %}
+class Product
+  def delivered?
+    # Complex logic to see if product was delivered
+  end
+end
+
+module ProductDeliveryHelper
+  def delivered?
+    supports_multiple_delivery? || super
+  end
+end
+
+class GiftCard < Product
+  include ProductDeliveryHelper
+  def supports_multiple_delivery?
+    true
+  end
+end
+
+class Spoon < Product
+  include ProductDeliveryHelper
+  def supports_multiple_delivery?
+    false
+  end
+end
+
+class Shirt < Product
+  def within_delivery_duration?
+    # Complex logic to calculate delivery duration
+  end
+  def delivered?
+    within_delivery_duration? && super
+  end
+end
+{% endhighlight %}
+
+Here <code>Product</code> implements a basic <code>delivered?</code> method that checks if a product was delivered. The subclasses of <code>Product</code> have their own logic to see if those were delivered. <code>GiftCard</code> and <code>Spoon</code> are two products that have same behavior of checking for their delivery status. We see if those support multiple delivery and if they do, we also check if they follow the basic <code>delivered?</code> check in the <code>Product</code> class.
+
+We have followed the DRY principle here and moved the logic for <code>Spoon</code> and <code>GiftCard</code> classes in <code>ProductDeliveryHelper</code> module. The <code>Shirt</code> class stands out because it does not have a notion of multiple delivery. Instead it has a concept of a delivery duration. Lets say we deliver shirts only during some specific months of the year.
+
+Like other good developers, we will test our code. We can write unit tests for different classes fairly easily. We will also have to test <code>ProductDeliveryHelper</code> in isolation. When testing <code>ProductDeliveryHelper#delivered?</code> we want to test its behavior of calling <code>super</code>. But we do not want to couple the test with a <code>GiftCard</code> or <code>Spoon</code>. This way, we will be sure that its behavior is tested in isolation.
+
+To test it in isolation, we must have a test object available to us. For this, we will have to create a test class in the test itself.
+
+
+{% highlight ruby %}
+require 'test/unit'
+class ProductDeliveryHelperTest < Test::Unit::TestCase
+  class TestParent
+    def delivered?
+      'super called'
+    end
+  end
+  class TestDelivered < TestParent
+    include ProductDeliveryHelper
+  end
+  def test_delivered_with_no_multiple_delivery
+    test_object = TestDelivered.new
+    def test_object.supports_multiple_delivery?; false; end
+    assert_equal 'super called', ob.delivered?
+  end
+  def test_delivered_with_multiple_delivery
+    test_object = TestDelivered.new
+    def test_object.supports_multiple_delivery?; true; end
+    assert ob.delivered?
+  end
+end
+{% endhighlight %}
+
+Above makes our tests complete.
+
+Thanks to <strong>workmad3</strong> for answering and discussing my original question in <em>#RubyOnRails</em>.
