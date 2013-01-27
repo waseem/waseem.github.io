@@ -5,6 +5,8 @@ title: Multiple Route Files in Rails 4
 
 h1. {{ page.title }}
 
+__UPDATE:__ This feture was reverted in favor of "fa736e69a197...2d9dbf416b14":https://github.com/rails/rails/compare/fa736e69a197...2d9dbf416b14 . There is also a "related discussion":https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-core/EFiL2BHAevI
+
 Often in our Rails applications, we end up with a very long <code>config/routes.rb</code>. The application that I am currently working on has a routes file with over 470 lines. As the number of lines grow, the routes file becomes difficult to maintain. Searching where a particular route is defined also becomes quite difficult.
 
 With commit "6acebb38":https://github.com/rails/rails/commit/6acebb38bc0637bc05c19d87f8767f16ce79189b made by Yehuda Katz, we can specify multiple route files under <code>config/routes/</code> directory in our application.
