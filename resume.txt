@@ -1,0 +1,47 @@
+﻿                                                          Last Updated: 4th March 2013
+
+Waseem Ahmad
+-----
+
+New Delhi, India
+Phone: +91-9891 8219 75
+Email: talk.to.waseem@gmail.com
+Skype: talk.to.waseem
+Blog: http://waseem-ahmad.com
+Github: http://github.com/waseem
+LinkedIn: http://linkedin.com/in/ahmadwaseem
+
+Experience
+------
+
+1. Mad Code Caresser, Novel Apps Corp. - October 2012 - Present (6 months)
+   1. Authorly (http://authorly.com)
+      Still under development. This lets its users create kids’ storybooks in the form of interactive applications for mobile and touch based device using a web based software.
+
+2. Software Engineer, Vinayak Solutions - February 2011 – October 2012 (2 years 3 months)
+   1. Infomob (http://infomob.com)
+      A Nigeria based local search service. It allows submission of various local businesses that appear in search results. It also allows its users to rate, review and comment on various businesses.
+   2. Ideeli (http://ideeli.com)
+      A high traffic Ruby on Rails flash deal website specializing in apparel and fashion accessories.
+
+3. Senior Ruby on Rails Developer, 5amily Ltd. (http://5amily.com) - December 2008 – February 2011 (2 years)
+   A Genealogy based social networking application. It lets its users connect with their relatives. Back-end is a Rails stack that exposes a REST API to its Flex front end. It also uses Facebook Graph API to fetch a user’s news feed, albums, photos, friends and user profile information.
+
+Skills
+-----
+
+1. Ruby, Javascript using jQuery and Prototype frameworks, Coffeescript.
+2. Web Development (Ruby on Rails, Backbone, MySQL, Rspec, Cucumber).
+
+Open source and community
+-----
+
+1. Creator of Ruby on Rails plugin Joey http://github.com/waseem/joey.
+2. Contributed to various ruby gems like rails, facebooker, koala and echowaves.
+3. Actively helping people on #RubyOnRails(waseem_) and StackOverflow http://stackoverflow.com/users/100466/waseem.
+4. Have taken various sessions on different topics in local Ruby Meetups http://www.meetup.com/delhi-ruby/.
+
+Education
+-----
+
+B. Tech.(Computer Engg. CPI 7.3/10), Jamia Millia Islamia, New Delhi, July 2005 - June 2009.
