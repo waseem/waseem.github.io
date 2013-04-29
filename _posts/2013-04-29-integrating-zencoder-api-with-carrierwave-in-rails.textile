@@ -108,11 +108,11 @@ Method <code>zencode</code> prepares parameters that specify the formats in whic
 
 ":public":https://app.zencoder.com/docs/api/encoding/s3-settings/public is specific to S3 in my case to make the uploaded videos publicly readable. ":base_url":https://app.zencoder.com/docs/api/encoding/general-output-settings/base-url is the full url of the directory where Zencoder will put the encoded video. ":filename":https://app.zencoder.com/docs/api/encoding/general-output-settings/filename tells it what filename to use when uploading the encoded file to that directory. Here, we're following a pattern in naming the files which will be useful for us generating the urls of the output files which is explained a little bit further. We also specify an optional <code>label</code>, <code>format</code>, <code>audio_codec</code> and <code>video_codec</code>.
 
-Zencoder not only encodes our videos, it also lets us generate tbumbnails for those videos. The last hash in outputs hash specifies the options for the "thumbnails":https://app.zencoder.com/docs/api/encoding/thumbnails of the video. It should be noted that the filename for generated thumbnails has an extension attached to it according to its format - by default png. ":times":https://app.zencoder.com/docs/api/encoding/thumbnails/times is an array of times in seconds at which to grab a thumbnail. In our case it has only one entry because we want only one thumbnail at four second. We 'preserve' the aspect ratio and also specify width and height of the thumbnail.
+Zencoder not only encodes our videos, it also lets us generate thumbnails for those videos. The last hash in outputs hash specifies the options for the "thumbnails":https://app.zencoder.com/docs/api/encoding/thumbnails of the video. It should be noted that the filename for generated thumbnails has an extension attached to it according to its format - by default png - by Zencoder itself; We don't need to specify it. ":times":https://app.zencoder.com/docs/api/encoding/thumbnails/times is an array of times in seconds at which to grab a thumbnail. In our case it has only one entry because we want only one thumbnail at four second. We 'preserve' the aspect ratio and also specify 'width' and 'height' of the thumbnail.
 
-Next we send all these options to Zencoder API. To talk with the api, we use the "zencoder":http://rubygems.org/gems/zencoder gem. <code>Zencoder::Job.create(params)</code> makes a request to the API and returns the response. We save the response in <code>meta_info</code> attribute of the <code>Video</code> record. We also save the the video.
+Next we send all these options to Zencoder API. To talk with the api, we use the "zencoder":http://rubygems.org/gems/zencoder gem. <code>Zencoder::Job.create(params)</code> makes a request to the API and returns the response. We save the response in <code>meta_info</code> attribute of the <code>Video</code> record. We also save the video.
 
-Once Zencoder receives our request, it'll encode our videos. The question arises how we'll know when encoding process completes. The answer is that Zencoder "notifies":https://app.zencoder.com/docs/api/encoding/notifications our application about completion of the process by making an HTTP POST request to our application. We need to tell it where to make that request in "notifications":https://app.zencoder.com/docs/api/encoding/notifications/notifications option. We can also ask Zencoder to send us some data back when it makes this request to our servers. We can use ":pass_through":https://app.zencoder.com/docs/api/encoding/job/pass-through option to specify such data. In our case we'd use the <code>id</code> of the video that is being encoded. We change the uploader code to include those information.
+Once Zencoder receives our request, it'll encode our videos. The question arises how we'll know when encoding process completes. The answer is that Zencoder "notifies":https://app.zencoder.com/docs/api/encoding/notifications our application about completion of the process by making an HTTP POST request. We need to tell it where to make that request in "notifications":https://app.zencoder.com/docs/api/encoding/notifications/notifications option. We can also ask Zencoder to send us some data back when it makes this request to our servers. We can use ":pass_through":https://app.zencoder.com/docs/api/encoding/job/pass-through option to specify such data. In our case we'd use the <code>id</code> of the video that is being encoded. We change the uploader code to include those information.
 
 {% highlight ruby %}
 params = {
@@ -126,7 +126,7 @@ params = {
 }
 {% endhighlight %}
 
-We also include modules that are necessary to use <code>zencoder_url</code> url helper in the uploader code and also define necessary
+We also include modules that are necessary to use <code>zencoder_url</code> url helper in the uploader code and also define necessary route.
 
 {% highlight ruby %}
 class VideoUploader < CarrierWave::Uploader::Base
@@ -135,6 +135,7 @@ class VideoUploader < CarrierWave::Uploader::Base
   ...
 end
 {% endhighlight %}
+
 
 {% highlight ruby %}
 # config/routes.rb
@@ -159,7 +160,7 @@ class ZencoderController < ApplicationController
 end
 {% endhighlight %}
 
-We skip the verification of authenticity token for requests coming to this controller. POST from the API will trigger <code>create</code> action of our controller. In the action, we first find the corresponding video for which the encoding process finished and request was made. The id of the video is given to us in the <code>:pass_through</code> parameter of the request. We check if the video exists and encoding process' was 'finished' successfully. We save all the parameters coming in the request to <code>meta_info</code> of the video. We don't give any response to the request because the request does not expect any.
+We skip the verification of authenticity token for requests coming to this controller. POST from the API will trigger <code>create</code> action of our controller. In the action, we first find the corresponding video for which the encoding process finished. The id of the video is given to us in the <code>:pass_through</code> parameter of the request. We check if the video exists and encoding state of process was 'finished' successfully. We save all the parameters coming in the request to <code>meta_info</code> of the video. We don't give any response to the request because the request does not expect any.
 
 Now the video is completely encoded and we can use it in our application. We can use <code>@video.video.url</code> to get the url of original video. Carrierwave does not know URLs of encoded videos. We'll have to write a little bit more code so that we are able to access encoded videos and thumbnail.
 
