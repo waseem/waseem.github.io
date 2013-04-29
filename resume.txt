@@ -14,11 +14,11 @@ LinkedIn: http://linkedin.com/in/ahmadwaseem
 Experience
 ------
 
-1. Mad Code Caresser, Novel Apps Corp. - October 2012 - Present (6 months)
+1. Mad Code Caresser, Novel Apps Corp. - October 2012 - Present
    1. Authorly (http://authorly.com)
-      Still under development. This lets its users create kids’ storybooks in the form of interactive applications for mobile and touch based device using a web based software.
+      Still under development. This lets its users create kids’ storybooks in the form of interactive applications for mobile and touch based devices using a web based software.
 
-2. Software Engineer, Vinayak Solutions - February 2011 – October 2012 (2 years 3 months)
+2. Software Engineer, Vinayak Solutions - February 2011 – October 2012 (1 year 9 months)
    1. Infomob (http://infomob.com)
       A Nigeria based local search service. It allows submission of various local businesses that appear in search results. It also allows its users to rate, review and comment on various businesses.
    2. Ideeli (http://ideeli.com)
@@ -39,7 +39,7 @@ Open source and community
 1. Creator of Ruby on Rails plugin Joey http://github.com/waseem/joey.
 2. Contributed to various ruby gems like rails, facebooker, koala and echowaves.
 3. Actively helping people on #RubyOnRails(waseem_) and StackOverflow http://stackoverflow.com/users/100466/waseem.
-4. Have taken various sessions on different topics in local Ruby Meetups http://www.meetup.com/delhi-ruby/.
+4. Have taken various sessions on different topics in local Ruby Meetup http://www.meetup.com/delhi-ruby/.
 
 Education
 -----
