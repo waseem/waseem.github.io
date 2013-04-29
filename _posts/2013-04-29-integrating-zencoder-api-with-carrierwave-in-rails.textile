@@ -214,5 +214,6 @@ class Video < Asset
       try(:[], :state) == 'finished'
   end
 end
-
 {% endhighlight %}
+
+You can find code listed in this post in "this gist":https://gist.github.com/waseem/5479964
