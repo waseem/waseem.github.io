@@ -195,7 +195,7 @@ end
 Above methods will give us URL to encoded videos and thumbnail. We can access them like <code>@video.video.mp4_url</code>. Now we write some helpers in our <code>Video</code> model that will let us calculate the duration and find out the encoding status of the video.
 
 {% highlight ruby %}
-class Video < Asset
+class Video < ActiveRecord::Base
   mount_uploader :video, VideoUploader
 
   # To locally test the videos, after Zencoder has done
