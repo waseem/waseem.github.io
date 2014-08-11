@@ -14,7 +14,7 @@ LinkedIn: http://linkedin.com/in/ahmadwaseem
 Experience
 ------
 
-1. CTO, Novel Apps Corp. - March 2014 - July 2014 (5 months)
+1. Chief Technology Officer, Novel Apps Corp. - March 2014 - July 2014 (5 months)
    a. Authorly (http://authorly.com)
       This lets authors of children's books convert their books in the form of interactive applications for mobile and touch based devices using a web based software.
    b. Bookfair (http://bookfairapp.com)
