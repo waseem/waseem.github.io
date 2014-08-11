@@ -1,4 +1,4 @@
-﻿                                                          Last Updated: 4th March 2013
+﻿                                                          Last Updated: 11th August 2014
 
 Waseem Ahmad
 -----
@@ -14,24 +14,38 @@ LinkedIn: http://linkedin.com/in/ahmadwaseem
 Experience
 ------
 
-1. Mad Code Caresser, Novel Apps Corp. - October 2012 - Present
-   1. Authorly (http://authorly.com)
-      Still under development. This lets its users create kids’ storybooks in the form of interactive applications for mobile and touch based devices using a web based software.
+1. CTO, Novel Apps Corp. - March 2014 - July 2014 (5 months)
+   a. Authorly (http://authorly.com)
+      This lets authors of children's books convert their books in the form of interactive applications for mobile and touch based devices using a web based software.
+   b. Bookfair (http://bookfairapp.com)
+      This is consumer facing web application that lets users sign up with their credit cards for BookFair mobile application. It exposes a JSON API for the BookFair mobile application which lets its users load books and its content in the mobile application.
 
-2. Software Engineer, Vinayak Solutions - February 2011 – October 2012 (1 year 9 months)
-   1. Infomob (http://infomob.com)
+2. Software Engineer, Novel Apps Corp. - October 2012 - February 2014 (1 year 5 months)
+   a. Authorly (http://authorly.com)
+      This lets authors of children's books convert their books in the form of interactive applications for mobile and touch based devices using a web based software.
+
+3. Software Engineer, Vinayak Solutions - February 2011 – October 2012 (1 year 9 months)
+   a. Infomob (http://infomob.com)
       A Nigeria based local search service. It allows submission of various local businesses that appear in search results. It also allows its users to rate, review and comment on various businesses.
-   2. Ideeli (http://ideeli.com)
+   b. Ideeli (http://ideeli.com)
       A high traffic Ruby on Rails flash deal website specializing in apparel and fashion accessories.
 
-3. Senior Ruby on Rails Developer, 5amily Ltd. (http://5amily.com) - December 2008 – February 2011 (2 years)
+4. Senior Ruby on Rails Developer, 5amily Ltd. (http://5amily.com) - December 2008 – February 2011 (2 years)
    A Genealogy based social networking application. It lets its users connect with their relatives. Back-end is a Rails stack that exposes a REST API to its Flex front end. It also uses Facebook Graph API to fetch a user’s news feed, albums, photos, friends and user profile information.
 
 Skills
 -----
 
-1. Ruby, Javascript using jQuery and Prototype frameworks, Coffeescript.
-2. Web Development (Ruby on Rails, Backbone, MySQL, Rspec, Cucumber).
+1. Ruby, Bash, Javascript using jQuery and Prototype frameworks and Coffeescript.
+2. Web Development (Ruby on Rails, Sinatra, Backbone, MySQL, Redis, Rspec, Minitest, Cucumber and Git).
+3. Server Administration on AWS, Rackspace, DigitalOcean, Linode and Xcloud(http://xcloud.me/) platforms.
+4. Other tools and services include:
+  a. Stripe (https://stripe.com)
+  b. TeamCity (http://www.jetbrains.com/teamcity/)
+  c. Kiss Metrics (https://www.kissmetrics.com/)
+  d. MixPanel (https://mixpanel.com/)
+  e. Sendgrid (http://sendgrid.com/)
+  f. MailChimp (http://mailchimp.com/)
 
 Open source and community
 -----
