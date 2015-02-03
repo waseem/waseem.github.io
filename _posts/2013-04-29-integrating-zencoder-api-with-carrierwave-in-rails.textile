@@ -198,6 +198,7 @@ Above methods will give us URL to encoded videos and thumbnail. We can access th
 {% highlight ruby %}
 class Video < ActiveRecord::Base
   mount_uploader :video, VideoUploader
+  serialize :meta_info, Hash
 
   # To locally test the videos, after Zencoder has done
   # transcoding, do following in rails console
