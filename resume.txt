@@ -14,15 +14,21 @@ LinkedIn: http://linkedin.com/in/ahmadwaseem
 Experience
 ------
 
-1. Freelance Ruby Developer - July 2014 - Present
+1. Freelance Ruby Developer - February 2015 - Present
    a. Celeberations (http://celebrations.com)
       An invitation planner platform that lets people send e-cards and manage invitation list. Also a platform for designers to curate e-cards and earn revenue.
-   b. Whistle (http://www.trywhistle.com/)
+
+2. Web Developer, Curiousminds Inc. - September 2014 - January 2015 (5 months)
+   a. Whistle (http://www.trywhistle.com/)
       Allows businesses to accept and respond to SMS from their customers.
 
-2. Chief Technology Officer, Novel Apps Corp. - March 2014 - July 2014 (5 months)
+   b. Brandreporter (http://www.brandreporter.com)
+      It lets people submit reports that pertain to counterfeit goods. These reports can then be used to tackle the sources of such good by genuine sources.
+
+2. Chief Technology Officer, Novel Apps Corp. - March 2014 - August 2014 (6 months)
    a. Authorly (http://authorly.com)
       This lets authors of children's books convert their books in the form of interactive applications for mobile and touch based devices using a web based software.
+
    b. Bookfair (http://bookfairapp.com)
       This is consumer facing web application that lets users sign up with their credit cards for BookFair mobile application. It exposes a JSON API for the BookFair mobile application which lets its users load books and its content in the mobile application.
 
@@ -33,6 +39,7 @@ Experience
 4. Software Engineer, Vinayak Solutions - February 2011 – October 2012 (1 year 9 months)
    a. Infomob (http://infomob.com)
       A Nigeria based local search service. It allows submission of various local businesses that appear in search results. It also allows its users to rate, review and comment on various businesses.
+
    b. Ideeli (http://ideeli.com)
       A high traffic Ruby on Rails flash deal website specializing in apparel and fashion accessories.
 
