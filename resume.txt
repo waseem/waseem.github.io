@@ -14,7 +14,7 @@ LinkedIn: http://linkedin.com/in/ahmadwaseem
 Experience
 ------
 
-1. Freelance Ruby Developer - February 2015 - Present
+1. Freelance Fullstack Ruby Engineer - February 2015 - Present
    a. Celeberations (http://celebrations.com)
       An invitation planner platform that lets people send e-cards and manage invitation list. Also a platform for designers to curate e-cards and earn revenue.
 
