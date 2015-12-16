@@ -15,7 +15,7 @@ Experience
 ------
 
 1. Freelance Fullstack Ruby Engineer - February 2015 - Present
-   a. Celeberations (http://celebrations.com)
+   a. Pingg (http://pingg.com)
       An invitation planner platform that lets people send e-cards and manage invitation list. Also a platform for designers to curate e-cards and earn revenue.
 
 2. Web Developer, Curiousminds Inc. - September 2014 - January 2015 (5 months)
