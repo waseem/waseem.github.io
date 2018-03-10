@@ -1,4 +1,4 @@
-﻿                                                          Last Updated: 4th June 2015
+﻿                                                          Last Updated: 10th March 2018
 
 Waseem Ahmad
 -----
@@ -25,16 +25,13 @@ Experience
    b. Brandreporter (http://www.brandreporter.com)
       It lets people submit reports that pertain to counterfeit goods. These reports can then be used to tackle the sources of such good by genuine sources.
 
-2. Chief Technology Officer, Novel Apps Corp. - March 2014 - August 2014 (6 months)
+3. Software Engineer, Novel Apps Corp. - October 2012 - August 2014 (1 year 11 months)
    a. Authorly (http://authorly.com)
       This lets authors of children's books convert their books in the form of interactive applications for mobile and touch based devices using a web based software.
 
    b. Bookfair (http://bookfairapp.com)
       This is consumer facing web application that lets users sign up with their credit cards for BookFair mobile application. It exposes a JSON API for the BookFair mobile application which lets its users load books and its content in the mobile application.
 
-3. Software Engineer, Novel Apps Corp. - October 2012 - February 2014 (1 year 5 months)
-   a. Authorly (http://authorly.com)
-      This lets authors of children's books convert their books in the form of interactive applications for mobile and touch based devices using a web based software.
 
 4. Software Engineer, Vinayak Solutions - February 2011 – October 2012 (1 year 9 months)
    a. Infomob (http://infomob.com)
@@ -67,10 +64,12 @@ Open source and community
 
 1. Creator of Ruby on Rails plugin Joey http://github.com/waseem/joey.
 2. Contributed to various ruby gems like rails, facebooker, koala and echowaves.
-3. Actively helping people on #RubyOnRails(waseem_) and StackOverflow http://stackoverflow.com/users/100466/waseem.
-4. Have taken various sessions on different topics in local Ruby Meetup http://www.meetup.com/delhi-ruby/.
+3. Contributed to Kubernets: https://github.com/kubernetes/kubernetes/commits?author=waseem
+4. Created a small Go library, go-xkcd, to consume xkcd API: https://github.com/waseem/go-xkcd
+4. Actively helping people on #RubyOnRails(waseem_) and StackOverflow http://stackoverflow.com/users/100466/waseem.
+5. Have taken various sessions on different topics in local Ruby Meetup http://www.meetup.com/delhi-ruby/.
 
 Education
 -----
 
-B. Tech.(Computer Engg. CPI 7.3/10), J. M. I. Central University, New Delhi, July 2005 - June 2009.
+B. Tech.(Computer Engg. CPI(GPA) 7.3/10), Jamia Millia Islamia Central University, New Delhi, July 2005 - June 2009.
