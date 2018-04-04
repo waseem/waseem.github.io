@@ -47,7 +47,7 @@ Skills
 -----
 
 1. Ruby, Bash, Javascript using jQuery and Prototype frameworks and Coffeescript.
-2. Web Development (Ruby on Rails, Sinatra, Backbone, MySQL, Redis, Rspec, Minitest, Cucumber and Git).
+2. Web Development (Ruby on Rails, Sinatra, Backbone, MySQL, Postgresql, Redis, Rspec, Minitest, Cucumber and Git).
 3. Server Administration on AWS, Rackspace, DigitalOcean, Linode and Xcloud(http://xcloud.me/) platforms.
 4. Other tools and services include:
   a. Stripe (https://stripe.com)
@@ -72,4 +72,4 @@ Open source and community
 Education
 -----
 
-B. Tech.(Computer Engg. CPI(GPA) 7.3/10), Jamia Millia Islamia Central University, New Delhi, July 2005 - June 2009.
+Bachelor of Technology (Computer Engineering) CPI(GPA) 7.3/10, Jamia Millia Islamia Central University, New Delhi, July 2005 - June 2009.
