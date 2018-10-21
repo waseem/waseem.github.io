@@ -1,5 +1,4 @@
-﻿                                                          Last Updated: 10th March 2018
-
+                                                    Last Updated: 21st October 2018
 Waseem Ahmad
 -----
 
@@ -16,21 +15,21 @@ Experience
 
 1. Freelance Fullstack Ruby Engineer - February 2015 - Present
    a. Pingg (http://pingg.com)
-      An invitation planner platform that lets people send e-cards and manage invitation list. Also a platform for designers to curate e-cards and earn revenue.
+      An invitation planner platform that lets people send e-cards and manage invitation list. Also a platform for designers to curate e-cards and earn revenue. A Ruby on Rails application that was moved from Rackspace to AWS. It utilized Apache FOP and RabbitMQ to generate PDFs of ecards for printing and sending via snail mail. The application also utilized javascript heavily to improve user experience.
 
 2. Web Developer, Curiousminds Inc. - September 2014 - January 2015 (5 months)
    a. Whistle (http://www.trywhistle.com/)
-      Allows businesses to accept and respond to SMS from their customers.
+      Allows businesses to accept and respond to SMS from their customers. It is a serverless application built on top of AngularJS and Angularfire that consumed Firebase Realtime Database to send SMS using Twilio.
 
    b. Brandreporter (http://www.brandreporter.com)
-      It lets people submit reports that pertain to counterfeit goods. These reports can then be used to tackle the sources of such good by genuine sources.
+      A Ruby on Rails application which lets people submit reports that pertain to counterfeit goods. These reports can then be used to tackle the sources of such good by genuine sources.
 
 3. Software Engineer, Novel Apps Corp. - October 2012 - August 2014 (1 year 11 months)
    a. Authorly (http://authorly.com)
-      This lets authors of children's books convert their books in the form of interactive applications for mobile and touch based devices using a web based software.
+      This lets authors of children's books convert their books in the form of interactive applications for mobile and touch based devices using a web based software. It involved remote and onsite work collaboration with the CEO and other technological team members. It was a Ruby on Rails application with a heavy Backbone.js work. I also managed the infrastructure on AWS and Xcloud. I was only person responsible for developing and designing the Json API exposed to the Backbone client.
 
    b. Bookfair (http://bookfairapp.com)
-      This is consumer facing web application that lets users sign up with their credit cards for BookFair mobile application. It exposes a JSON API for the BookFair mobile application which lets its users load books and its content in the mobile application.
+      This is consumer facing Ruby on Rails web application that let users sign up with their credit cards for BookFair mobile application. It exposes a JSON API for the BookFair mobile application which lets its users load books and its content in the mobile application.
 
 
 4. Software Engineer, Vinayak Solutions - February 2011 – October 2012 (1 year 9 months)
@@ -38,7 +37,7 @@ Experience
       A Nigeria based local search service. It allows submission of various local businesses that appear in search results. It also allows its users to rate, review and comment on various businesses.
 
    b. Ideeli (http://ideeli.com)
-      A high traffic Ruby on Rails flash deal website specializing in apparel and fashion accessories.
+      A high traffic Ruby on Rails and Javascript/jQuery flash deal website specializing in apparel and fashion accessories. It involved collaborating with globally separated team to deliver features and bug fixes on a daily basis.
 
 5. Senior Ruby on Rails Developer, 5amily Ltd. (http://5amily.com) - December 2008 – February 2011 (2 years)
    A Genealogy based social networking application. It lets its users connect with their relatives. Back-end is a Rails stack that exposes a REST API to its Flex front end. It also uses Facebook Graph API to fetch a user’s news feed, albums, photos, friends and user profile information.
